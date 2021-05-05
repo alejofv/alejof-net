@@ -17,23 +17,14 @@
         and make websites and APIs.
       </p>
 
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-20 mx-auto transform rotate-180">
-        <g
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
-        >
-          <path
-            d="M9.572 37.573c1.59-8.981.079-20.268.667-29.333M16.803 12.367c-3.562-2.561-3.912-6.87-6.775-9.94-1.238 2.954-4.023 8.829-6.831 10.695"
-          />
-        </g>
-      </svg>
+      <ArrowDown />
     </div>
 
-    <ProfilePic />
+    <g-image
+      src="~/images/profile.jpg"
+      class="object-cover w-40 h-40 mx-auto my-8 rounded-full"
+      alt="profile"
+    />
 
     <div class="mt-8">
       <p class="my-4">
@@ -71,11 +62,11 @@
 </template>
 
 <script>
-import ProfilePic from "~/components/ProfilePic.vue";
+import ArrowDown from "~/components/ArrowDown.vue";
 
 export default {
   components: {
-    ProfilePic,
+    ArrowDown,
   },
   metaInfo: {
     title: "Hello, world!",
