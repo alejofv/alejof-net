@@ -1,11 +1,11 @@
 <template>
-  <div class="container max-w-screen-md mx-auto px-5">
-    <header class="flex justify-between items-center mt-8 mb-12">
-      <strong>
+  <div class="container max-w-screen-md p-6 mx-auto">
+    <header class="flex items-center justify-between my-4">
+      <div>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+      </div>
       <nav class="space-x-6">
-        <g-link class="nav__link" to="/">Home</g-link>
+        <g-link to="/">Home</g-link>
       </nav>
     </header>
     <slot/>
