@@ -10,4 +10,10 @@ export default function (Vue, { router, head, isClient }) {
 
   // Add attributes to BODY tag
   head.bodyAttrs = { class: 'dark:bg-gray-800 dark:text-white' }
+
+  // Add meta tags
+  head.meta.push({
+    name: 'description',
+    content: 'Alejo Figueroa - Software Developer - Personal Site'
+  })
 }

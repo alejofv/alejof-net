@@ -2,6 +2,8 @@
   <Layout>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
+    <h1 class="hidden">About Me</h1>
+    
     <div class="flex flex-col justify-center min-h-screen -mt-12">
       <p class="my-4 text-4xl leading-normal text-center">
         Hi, I'm Alejo Figueroa. I like to
