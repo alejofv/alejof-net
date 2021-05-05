@@ -6,15 +6,15 @@
     
     <div class="flex flex-col justify-center min-h-screen -mt-12">
       <p class="my-4 text-4xl leading-normal text-center">
-        Hi, I'm Alejo Figueroa. I like to
+        Hi, I'm Alejo Figueroa. I 
         <a
-          class="border-b border-black dark:border-white"
+          class="border-b-2 border-gray-800 dark:border-gray-50 hover:text-gray-500 hover:border-gray-500"
           href="https://github.com/alejofv"
           target="_blank"
           rel="noreferrer noopener"
           >write code</a
         >
-        and make websites and APIs.
+        to create websites, APIs and services.
       </p>
 
       <ArrowDown />
@@ -28,13 +28,13 @@
 
     <div class="mt-8">
       <p class="my-4">
-        My main focus is the dotnet stack, but I also try to work on (or play
-        with) some other stuff related to web sites, APIs and backends. The list
+        I'm a software engineer and my main focus is the dotnet stack, but I also try to work on (or play
+        with) some other stuff related to websites, APIs and backends. The list
         so far covers bits of Javascript (Node, Vue), Java, Python and Go.
       </p>
       <p class="mt-4">
-        I'm passionate about software design and very enthusiastic about
-        Microservices, Event-based and JAMStack architectures.
+        I'm passionate about software design, very enthusiastic about
+        Serverless and Microservices, and a huge fan of Event-based and JAMStack architectures.
       </p>
     </div>
 
