@@ -50,7 +50,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 
   // Add attributes to BODY tag
-  head.bodyAttrs = { class: 'text-gray-800 bg-gray-50 dark:bg-gray-800 dark:text-gray-50' }
+  head.bodyAttrs = { class: 'text-gray-800 bg-gray-50 dark:bg-gray-700 dark:text-gray-100' }
 
   // Add meta tags
   head.meta.push({
