@@ -34,7 +34,7 @@
       </p>
       <p class="mt-4">
         I'm passionate about software design, very enthusiastic about
-        Serverless and Microservices, and a huge fan of Event-based and JAMStack architectures.
+        Serverless and Microservices, and a huge fan of Event-driven and JAMStack architectures.
       </p>
     </div>
 
