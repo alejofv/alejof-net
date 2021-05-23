@@ -33,7 +33,7 @@
       <p class="mt-4">
         Hi, I'm Alejo Figueroa I write code to create websites, APIs and services.
       </p>
-      <p class="flex flex-row mt-2 space-x-6">
+      <p class="w-full mt-2 space-x-6">
         <RouteLink to="/notes/" :border="true">See more notes like this</RouteLink>
         <RouteLink to="/" :border="true">Go to main page</RouteLink>
       </p>
