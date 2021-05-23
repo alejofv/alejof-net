@@ -1,7 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue'
 import './css/main.css'
 
 const fontsCss = `
@@ -45,12 +44,19 @@ const fontsCss = `
        url('/fonts/pt-sans-v12-latin-700.svg#PTSans') format('svg'); /* Legacy iOS */
 }`
 
+import marked from 'marked'
+
+import DefaultLayout from '~/layouts/Default.vue'
+
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+  // Set global components
   Vue.component('Layout', DefaultLayout)
 
+  // Marked filter
+  Vue.filter('markdown', (string) => marked(string))
+
   // Add attributes to BODY tag
-  head.bodyAttrs = { class: 'text-gray-800 bg-gray-50 dark:bg-gray-700 dark:text-gray-50' }
+  head.bodyAttrs = { class: 'text-gray-800 bg-gray-50 dark:bg-gray-700 dark:text-gray-100' }
 
   // Add meta tags
   head.meta.push({

@@ -10,6 +10,9 @@ const autoprefixer = require('autoprefixer')
 module.exports = {
   siteName: 'Alejo F',
   plugins: [],
+  templates: {
+    Note: '/notes/:id',
+  },
   css: {
     loaderOptions: {
       postcss: {
