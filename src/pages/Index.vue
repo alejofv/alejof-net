@@ -4,15 +4,15 @@
     <h1 class="hidden">Alejo F</h1>
 
     <div class="flex flex-col justify-center min-h-screen -mt-12">
-      <p class="my-4 text-4xl leading-normal text-center">
+      <div class="my-4 text-4xl leading-normal text-center">
         Hi, I'm Alejo Figueroa. I
         <Link to="https://github.com/alejofv" :border="true">write code</Link>
         to create websites, APIs and services.
-      </p>
-      <p class="my-4 text-2xl leading-normal text-center">
+      </div>
+      <div class="my-4 text-2xl leading-normal text-center">
         I also
-        <Link to="/notes/" :border="true">post</Link> stuff as notes.
-      </p>
+        <RouteLink to="/notes/" :border="true">post</RouteLink> stuff as notes.
+      </div>
 
       <ArrowDown />
     </div>
