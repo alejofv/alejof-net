@@ -10,11 +10,7 @@
       </div>
       <div class="my-4 text-2xl leading-normal text-center">
         I also
-        <a
-          href="/notes/"
-          class="border-b border-gray-800 hover:text-gray-500 dark:border-gray-100"
-          >post</a
-        >
+        <RouteLink to="/notes/" :border="true">post</RouteLink>
         stuff as notes.
       </div>
 
