@@ -1,5 +1,7 @@
 <template>
-  <Layout :nav="true">
+  <Layout>
+    <TopNav />
+    
     <div class="mt-12">
       <h1 class="text-4xl">Notes</h1>
       <p class="mt-2">
@@ -13,9 +15,9 @@
         class="max-w-xl my-20"
       >
         <h2 class="text-2xl tracking-tight">
-          <RouteLink :to="getRoute(note.node)" :border="false">{{
-            note.node.title
-          }}</RouteLink>
+          <RouteLink :to="getRoute(note.node)" :border="false">
+            {{ note.node.title }}
+          </RouteLink>
         </h2>
         <div v-if="isLink(note.node)" class="inline-block my-2 text-sm">
           from
@@ -46,13 +48,15 @@
 </template>
 
 <script>
-import Link from "~/components/links/Link.vue";
-import RouteLink from "~/components/links/RouteLink.vue";
+import TopNav from "~/components/TopNav.vue"
+import Link from "~/components/links/Link.vue"
+import RouteLink from "~/components/links/RouteLink.vue"
 
 import marked from "marked";
 
 export default {
   components: {
+    TopNav,
     Link,
     RouteLink,
   },

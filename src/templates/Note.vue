@@ -1,5 +1,7 @@
 <template>
-  <Layout :nav="true">
+  <Layout>
+    <TopNav />
+
     <div class="flex flex-col justify-between min-h-screen">
     <article class="max-w-xl mt-12">
       <h1 class="text-4xl tracking-tight">{{ $page.note.title }}</h1>
@@ -44,6 +46,7 @@
 
 
 <script>
+import TopNav from "~/components/TopNav.vue"
 import Link from '~/components/links/Link.vue'
 import RouteLink from '~/components/links/RouteLink.vue'
 
@@ -51,6 +54,7 @@ import marked from 'marked'
 
 export default {
   components: {
+    TopNav,
     Link,
     RouteLink,
   },
