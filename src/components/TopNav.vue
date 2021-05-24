@@ -1,6 +1,6 @@
 <template>
   <div class="py-4 border-b border-gray-500">
-    <p class="text-2xl leading-tight"><RouteLink to="/" :border="false">Alejo Figueroa</RouteLink></p>
+    <div class="text-2xl leading-tight"><RouteLink to="/" :border="false">Alejo Figueroa</RouteLink></div>
   </div>
 </template>
 

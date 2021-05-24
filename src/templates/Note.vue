@@ -1,10 +1,10 @@
 <template>
   <Layout :nav="true">
     <div class="flex flex-col justify-between min-h-screen">
-    <div class="max-w-xl mt-12">
+    <article class="max-w-xl mt-12">
       <h1 class="text-4xl tracking-tight">{{ $page.note.title }}</h1>
 
-      <p v-if="isLink($page.note)" class="inline-block mt-1 mb-2 text-sm">
+      <div v-if="isLink($page.note)" class="inline-block mt-1 mb-2 text-sm">
         from
         <Link :to="$page.note.source" :border="true">
           {{ getSourceDomain($page.note) }}
@@ -21,13 +21,13 @@
             d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
           />
         </svg>
-      </p>
+      </div>
 
       <div
         class="my-8 prose dark:prose-dark"
         v-html="getContent($page.note)"
       ></div>
-    </div>
+    </article>
 
     <div class="my-12 border-t border-gray-500">
       <p class="mt-4">
@@ -46,6 +46,8 @@
 <script>
 import Link from '~/components/links/Link.vue'
 import RouteLink from '~/components/links/RouteLink.vue'
+
+import marked from 'marked'
 
 export default {
   components: {
@@ -66,7 +68,7 @@ export default {
         .split("/")[0];
     },
     getContent(note) {
-      return this.$options.filters.markdown(note.content);
+      return marked(note.content);
     },
   },
 };

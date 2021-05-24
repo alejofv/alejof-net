@@ -4,7 +4,8 @@
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    "preview": "python3 -m http.server --directory dist/"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.2",

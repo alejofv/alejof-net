@@ -44,16 +44,11 @@ const fontsCss = `
        url('/fonts/pt-sans-v12-latin-700.svg#PTSans') format('svg'); /* Legacy iOS */
 }`
 
-import marked from 'marked'
-
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
   // Set global components
   Vue.component('Layout', DefaultLayout)
-
-  // Marked filter
-  Vue.filter('markdown', (string) => marked(string))
 
   // Add attributes to BODY tag
   head.bodyAttrs = { class: 'text-gray-800 bg-gray-50 dark:bg-gray-700 dark:text-gray-100' }
