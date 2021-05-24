@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row py-12 space-x-6">
-    <Link to="https://github.com/alejofv" :border="false">
+    <Link to="https://github.com/alejofv" :border="false" title="Github">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="w-6 h-6"
@@ -16,7 +16,7 @@
         />
       </svg>
     </Link>
-    <Link to="https://www.linkedin.com/in/alejof-dev/" :border="false">
+    <Link to="https://www.linkedin.com/in/alejof-dev/" :border="false" title="LinkedIn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="w-6 h-6"

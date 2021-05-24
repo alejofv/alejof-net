@@ -1,6 +1,5 @@
 <template>
   <Layout :nav="false">
-
     <h1 class="hidden">Alejo F</h1>
 
     <div class="flex flex-col justify-center min-h-screen -mt-12">
@@ -11,7 +10,12 @@
       </div>
       <div class="my-4 text-2xl leading-normal text-center">
         I also
-        <RouteLink to="/notes/" :border="true">post</RouteLink> stuff as notes.
+        <a
+          href="/notes/"
+          class="border-b border-gray-800 hover:text-gray-500 dark:border-gray-100"
+          >post</a
+        >
+        stuff as notes.
       </div>
 
       <ArrowDown />
