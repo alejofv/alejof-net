@@ -11,7 +11,7 @@
       </p>
       <p class="my-4 text-2xl leading-normal text-center">
         I also
-        <RouteLink to="/notes/" :border="true">post</RouteLink> stuff as notes.
+        <Link to="/notes/" :border="true">post</Link> stuff as notes.
       </p>
 
       <ArrowDown />
