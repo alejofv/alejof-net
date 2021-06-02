@@ -12,9 +12,13 @@ module.exports = function (api) {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
     const collection = addCollection('Note')
 
+    console.log('Importing Notes content from API: ' + process.env.NOTES_API_URL)
     const { data } = await axios.get(`${process.env.NOTES_API_URL}?format=json&${process.env.NOTES_API_KEY}`)
+    
+    console.log(`Notes content: ${data.length} items`)
 
     for (const item of data) {
+      console.log(`Content from API: ${item.slug}`)
       const content = await axios.get(item.url).then(res => res.data)
 
       collection.addNode({
