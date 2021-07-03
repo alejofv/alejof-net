@@ -6,7 +6,7 @@
       <div class="my-4 text-4xl leading-normal text-center">
         Hi, I'm Alejo Figueroa. I
         <Link to="https://github.com/alejofv" :border="true">write code</Link>
-        to create websites, APIs and services.
+        to create websites, APIs and cloud-native solutions.
       </div>
       <div class="my-4 text-2xl leading-normal text-center">
         I also
