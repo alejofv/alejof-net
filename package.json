@@ -11,7 +11,7 @@
     "@tailwindcss/postcss7-compat": "^2.1.2",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^9",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "gridsome": "^0.7.0",
     "marked": "^2.0.5",
     "postcss": "^7",
