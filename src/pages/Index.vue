@@ -52,7 +52,7 @@ export default {
     RouteLink,
   },
   metaInfo: {
-    title: "Hello, world!",
+    title: "Home",
   },
 };
 </script>

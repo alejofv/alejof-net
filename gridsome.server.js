@@ -12,22 +12,33 @@ module.exports = function (api) {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
     const collection = addCollection('Note')
 
-    console.log('Importing Notes content from API: ' + process.env.NOTES_API_URL)
-    const { data } = await axios.get(`${process.env.NOTES_API_URL}?format=json&${process.env.NOTES_API_KEY}`)
-    
-    console.log(`Notes content: ${data.length} items`)
+    if ('NOTES_API_URL' in process.env) {
+      console.log('Importing Notes content from API: ' + process.env.NOTES_API_URL)
+      const { data } = await axios.get(`${process.env.NOTES_API_URL}?format=json&${process.env.NOTES_API_KEY}`)
+      
+      console.log(`Notes content: ${data.length} items`)
 
-    for (const item of data) {
-      console.log(`Content from API: ${item.slug}`)
-      const content = await axios.get(item.url).then(res => res.data)
+      for (const item of data) {
+        console.log(`Content from API: ${item.slug}`)
+        const content = await axios.get(item.url).then(res => res.data)
 
+        collection.addNode({
+          id: item.slug,
+          title: item.title,
+          date: item.date,
+          type: item.data.type || 'text',
+          source: item.data.source || '',
+          content: content,
+        })
+      }
+    } else {
       collection.addNode({
-        id: item.slug,
-        title: item.title,
-        date: item.date,
-        type: item.data.type || 'text',
-        source: item.data.source || '',
-        content: content,
+        id: 'test',
+        title: 'test',
+        date: '2021-01-01',
+        type: 'text',
+        source: '',
+        content: 'test'
       })
     }
   })

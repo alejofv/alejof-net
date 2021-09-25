@@ -58,8 +58,10 @@ export default {
     Link,
     RouteLink,
   },
-  metaInfo: {
-    title: "Hello, world!",
+  metaInfo() {
+    return {
+      title: this.$page.note.title,
+    }
   },
   methods: {
     isLink(note) {

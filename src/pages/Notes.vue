@@ -61,7 +61,7 @@ export default {
     RouteLink,
   },
   metaInfo: {
-    title: "Hello, world!",
+    title: "Notes",
   },
   methods: {
     getRoute(note) {
