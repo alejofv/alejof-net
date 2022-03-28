@@ -46,12 +46,19 @@ const fontsCss = `
 
 import DefaultLayout from '~/layouts/Default.vue'
 
+// Global comps
+import Link from "~/components/links/Link.vue";
+import RouteLink from "~/components/links/RouteLink.vue";
+
 export default function (Vue, { router, head, isClient }) {
   // Set global components
   Vue.component('Layout', DefaultLayout)
 
+  Vue.component('Link', Link)
+  Vue.component('RouteLink', RouteLink)
+
   // Add attributes to BODY tag
-  head.bodyAttrs = { class: 'text-gray-800 bg-gray-50 dark:bg-gray-700 dark:text-gray-100' }
+  head.bodyAttrs = { class: 'text-slate-800 bg-slate-50 dark:bg-slate-700 dark:text-slate-100' }
 
   // Add meta tags
   head.meta.push({

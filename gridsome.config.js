@@ -4,23 +4,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const tailwindcss = require('tailwindcss')
-const autoprefixer = require('autoprefixer')
-
 module.exports = {
   siteName: 'Alejo F',
   plugins: [],
   templates: {
     Note: '/notes/:id',
-  },
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: [
-          tailwindcss,
-          autoprefixer
-        ]
-      }
-    }
   }
 }

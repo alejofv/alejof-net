@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row py-12 space-x-6">
+  <div class="flex flex-row py-12 space-x-6 px-8 mt-12">
     <Link to="https://github.com/alejofv" :border="false" title="Github">
       <svg
         xmlns="http://www.w3.org/2000/svg"

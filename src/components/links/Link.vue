@@ -7,7 +7,8 @@
     rel="noreferrer noopener"
     target="_blank"
     ><slot
-  /></a>
+  />
+  </a>
 </template>
 
 <script>

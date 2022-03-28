@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-900"
+    class="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-700 dark:to-slate-700"
   >
     <div class="container max-w-screen-md p-6 pt-12 mx-auto">
       <slot />

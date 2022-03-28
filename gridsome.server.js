@@ -34,11 +34,11 @@ module.exports = function (api) {
     } else {
       collection.addNode({
         id: 'test',
-        title: 'test',
+        title: 'Test Title',
         date: '2021-01-01',
-        type: 'text',
-        source: '',
-        content: 'test'
+        type: 'link',
+        source: 'https://www.example.com',
+        content: `markdown`
       })
     }
   })
