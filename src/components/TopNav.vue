@@ -2,7 +2,7 @@
   <div>
     <div class="py-4">
       <div class="text-3xl leading-tight text-slate-600 dark:text-slate-300">
-        <RouteLink to="/" :border="false">Alejo Figueroa</RouteLink>
+        <RouteLink to="/" :border="false">Alejandro Figueroa</RouteLink>
       </div>
     </div>
     <p class="mt-2 text-slate-600 dark:text-slate-300">

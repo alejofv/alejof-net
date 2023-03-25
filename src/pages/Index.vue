@@ -4,14 +4,13 @@
 
     <div class="flex flex-col justify-center min-h-screen -mt-12">
       <div class="my-4 text-4xl leading-normal text-center">
-        Hi, I'm Alejo Figueroa. I
+        Hi, I'm Alejandro Figueroa. I
         <Link to="https://github.com/alejofv" :border="true">write code</Link>
         to create websites, APIs and cloud-native solutions.
       </div>
       <div class="my-4 text-2xl leading-normal text-center">
-        I also
-        <RouteLink to="/notes/" :border="true">post</RouteLink>
-        stuff as notes.
+        Sometimes I also write 
+        <RouteLink to="/notes/" :border="true">notes and quick thoughts</RouteLink>.
       </div>
 
       <ArrowDown />
@@ -26,15 +25,12 @@
 
       <div class="mt-8">
         <p class="my-4">
-          I'm a software engineer and my main focus is the dotnet stack, but I
-          also try to work on (or play with) some other stuff related to
-          websites, APIs and backends. The list so far covers bits of Javascript
-          (Node, Vue), Java, Python and Go.
+          I'm a software engineer who focuses on .NET on backends in the cloud, but I
+          also like to play with web applications and front-endy stuff.
         </p>
         <p class="mt-4">
           I'm passionate about software design, very enthusiastic about
-          Serverless and Microservices, and a huge fan of Event-driven and
-          JAMStack architectures.
+          Serverless and Microservices, and a huge fan of Cloud-native architectures.
         </p>
       </div>
     </div>
